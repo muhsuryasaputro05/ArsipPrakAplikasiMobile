@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextFileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama file (tanpa .txt)"
+        android:inputType="text"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/editTextContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Isi file"
+        android:minLines="4"
+        android:gravity="top|start"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan File"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/buttonToggleFiles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lihat Semua File"
+        android:layout_marginTop="8dp" />
+
+    <ListView
+        android:id="@+id/listViewFiles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
